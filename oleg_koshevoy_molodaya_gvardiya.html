@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Олег Кошевой — герой «Молодой гвардии»</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f4f6;
+            color: #222;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #263238, #546e7a);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 { font-size: 42px; margin-bottom: 10px; }
+        header p { font-size: 20px; }
+        nav {
+            background: #172027;
+            text-align: center;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover { color: #90caf9; }
+        main { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+        section {
+            background: white;
+            margin-bottom: 25px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #37474f;
+            margin-bottom: 15px;
+            border-left: 5px solid #607d8b;
+            padding-left: 12px;
+        }
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .fact {
+            background: #eceff1;
+            padding: 18px;
+            border-radius: 8px;
+        }
+        .fact strong {
+            display: block;
+            color: #37474f;
+            margin-bottom: 5px;
+        }
+        ul { margin-left: 25px; }
+        .hero-image {
+            display: block;
+            width: min(280px, 90%);
+            max-height: 380px;
+            object-fit: cover;
+            margin: 25px auto;
+            border-radius: 14px;
+            box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+            border: 5px solid white;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 22px;
+            margin-top: 20px;
+        }
+
+        .illustration {
+            background: #f8fafb;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+        }
+
+        .illustration img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .illustration figcaption {
+            padding: 14px 16px;
+            font-size: 14px;
+            color: #546e7a;
+        }
+
+        .quote {
+            background: #f5f5f5;
+            border-left: 5px solid #78909c;
+            padding: 20px;
+            margin-top: 15px;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            background: #263238;
+            color: white;
+            padding: 25px;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 30px; }
+            nav a { display: block; margin: 8px; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Олег Кошевой</h1>
+    <p>Герой романа Александра Фадеева «Молодая гвардия»</p>
+</header>
+
+<nav>
+    <a href="#about">О герое</a>
+    <a href="#character">Характер</a>
+    <a href="#activity">Деятельность</a>
+    <a href="#meaning">Значение образа</a>
+    <a href="#illustrations">Иллюстрации</a>
+</nav>
+
+<main>
+    <section id="about">
+        <h2>Кто такой Олег Кошевой?</h2>
+        <img
+            class="hero-image"
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Oleg_Koshevoy%2C_Young_Guard.png"
+            alt="Фотография Олега Кошевого"
+        >
+
+        <p>
+            Олег Кошевой — один из центральных персонажей романа
+            Александра Фадеева «Молодая гвардия». В произведении он
+            представлен как молодой участник подпольной организации,
+            действовавшей в оккупированном Краснодоне во время Великой
+            Отечественной войны.
+        </p>
+        <div class="facts">
+            <div class="fact"><strong>Произведение</strong>«Молодая гвардия»</div>
+            <div class="fact"><strong>Автор</strong>Александр Фадеев</div>
+            <div class="fact"><strong>Город</strong>Краснодон</div>
+            <div class="fact"><strong>Образ</strong>Молодой участник подполья</div>
+        </div>
+    </section>
+
+    <section id="character">
+        <h2>Характер героя</h2>
+        <p>
+            Олег Кошевой изображён как смелый, ответственный и
+            целеустремлённый юноша. Он способен принимать решения и
+            стремится поддерживать своих товарищей. Для героя важны
+            дружба, чувство ответственности и верность своим убеждениям.
+        </p>
+        <p>
+            В образе Олега автор показывает поколение молодых людей,
+            которым пришлось рано столкнуться с тяжёлыми испытаниями
+            военного времени.
+        </p>
+        <div class="quote">
+            Образ Олега Кошевого связан с темами мужества, товарищества,
+            ответственности и сопротивления захватчикам.
+        </div>
+    </section>
+
+    <section id="activity">
+        <h2>Участие в деятельности «Молодой гвардии»</h2>
+        <p>
+            В романе Олег Кошевой связан с подпольной организацией
+            «Молодая гвардия». Вместе с другими молодыми людьми он
+            участвует в сопротивлении немецкой оккупации.
+        </p>
+        <ul>
+            <li>поддерживает участников подполья;</li>
+            <li>участвует в распространении листовок;</li>
+            <li>помогает организовывать сопротивление;</li>
+            <li>стремится сохранить единство товарищей;</li>
+            <li>остаётся верен своим друзьям и убеждениям.</li>
+        </ul>
+    </section>
+
+    <section id="meaning">
+        <h2>Значение образа</h2>
+        <p>
+            Олег Кошевой является одним из символических образов романа.
+            Через его судьбу Александр Фадеев показывает мужество молодых
+            людей, оказавшихся в условиях войны и оккупации.
+        </p>
+        <p>
+            Образ героя заставляет задуматься о цене человеческой жизни,
+            силе дружбы и ответственности человека перед своими
+            товарищами и Родиной.
+        </p>
+    </section>
+
+    <section id="illustrations">
+        <h2>Иллюстрации</h2>
+
+        <div class="gallery">
+            <figure class="illustration">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Oleg_Koshevoy%2C_Young_Guard.png"
+                    alt="Олег Кошевой"
+                >
+                <figcaption>
+                    Олег Кошевой. Источник: Wikimedia Commons.
+                </figcaption>
+            </figure>
+
+            <figure class="illustration">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6f/%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B3%D0%BE%D1%84%2C_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%B3%D0%B5%D1%80%D0%BE%D1%8F%D0%BC_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%BD%D0%B001.jpg"
+                    alt="Памятник героям Краснодона"
+                >
+                <figcaption>
+                    Памятник героям Краснодона. Фото Екатерины Борисовой,
+                    Wikimedia Commons, лицензия CC BY-SA 4.0.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Заключение</h2>
+        <p>
+            Олег Кошевой — важный персонаж «Молодой гвардии». Его образ
+            помогает раскрыть основные темы произведения: мужество,
+            товарищество, верность и сопротивление врагу. История героя
+            показывает, насколько серьёзными могли быть испытания,
+            выпавшие на долю молодого поколения в годы войны.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>Тема: «Олег Кошевой — герой романа "Молодая гвардия"»</p>
+    <p>Выполнено в формате HTML</p>
+</footer>
+</body>
+</html>
